@@ -51,7 +51,19 @@ hr{
 	width: 140px;
 	margin: 20px auto;
 }
-
+p{
+	line-height: 21.82px;
+	padding: 0 10px;;
+}
+.section_titulo{
+	text-align: center;
+	font-size: 3rem;
+	margin-bottom: 10px;
+}
+img{
+	display: block;
+	max-width: 100%;
+}
 /**********************************/
 /* 2. Menu
 /**********************************/
@@ -90,14 +102,122 @@ hr{
 /**********************************/
 /* 4. Quem somos
 /**********************************/
-
+.somos{
+	max-width: 960px;
+	margin: 0 auto;
+}
+.somos-c{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.somos-c__texto{
+	flex: 6 1 160px;	
+}
+.somos-c__img{
+	flex: 1 1 350px;
+}
 /**********************************/
 /* 5. Nossos cursos
 /**********************************/
+.cursos{
+	max-width: 960px;
+	margin: 0 auto;
+}
+.cursos-c{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.curso{
+	width: 280px;
+	margin: 0 20px;
+}
+.curso__titulo{
+	font-size: 1.5rem;
+	text-align: center;
+	margin: 10px 0 5px 0;
+}
 
 /**********************************/
 /* 6. Planos
 /**********************************/
+.planos{
+	background-color: var(--clr-pink-ligth);
+
+}
+.planos-c{
+	max-width: 960px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.plano{
+	width: 290px;
+	margin: 10px;
+	border: 2px solid var(--clr-green-ligth);
+}
+.plano__titulo{
+	font-size: 3rem;
+	font-weight: bold;
+	text-align: center;
+	margin: 10px auto;
+}
+.plano__preco{
+	font-size: 3rem;
+	display: block;
+	text-align: center;
+	font-weight: bold;
+}
+.plano__preco sup{
+	position: relative;
+	font-size: 1.5rem;
+	top: -20px;
+}
+.planos__divisor{
+	background-color: var(--clr-green-ligth);
+	width: 20px;
+	margin: 5px auto;
+}
+.plano-lista{
+	max-width: 195px;
+	margin: 0 auto;
+}
+.plano-lista__item{
+	margin: 10px 0;
+	font-style: italic;
+	display: flex;
+	align-items: center;
+}
+.plano-lista__item::before{
+	content: "";
+	display: block;
+	width: 5px;
+	height: 5px;
+	background-color: var(--clr-green-ligth);
+	border-radius: 5px;
+	margin-right: 5px;
+}
+.plano__btn-comprar{
+	display: block;
+	max-width: 180px;
+	font-size: 2rem;
+	font-weight: bold;
+	margin: 15px auto;
+	padding: 10px;
+	text-align: center;
+	text-transform: uppercase;
+	border: 2px solid var(--clr-green-ligth);
+}
+.plano:last-child{
+	background-color: var(--clr-green-ligth);
+
+}
+.plano:last-child, .plano:last-child .plano__btn-comprar{
+	border:2px solid var(--clr-pink-dark);
+}
+
 
 /**********************************/
 /* 7. Vantagens
